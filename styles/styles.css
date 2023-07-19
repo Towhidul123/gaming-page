@@ -659,11 +659,127 @@ header{
 
 
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav {
-        flex-direction: column;
-    }
     
 
+    
+header{
+    /* padding: 20px; */
+    box-shadow: none;
+    margin-bottom: 100px;
+}
+
+
+
+.fourimage , nav,  .about, .about1, .banner{
+    flex-direction: column;
+    gap: 62px;
+}
+
+.o2, .o3{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img1,.img2,.img3,.img4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fourimage h4{
+    text-align: center;
+}
+
+.about1{
+    text-align: center;
+}
+
+.collage{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cowboy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cowboy img{
+    width: 80%;
+  
+
+}
+
+.cowboy2 img{
+    width: 30%;
+    left: 1px;
+   top: 0.5px;
+    
+
+}
+
+.collage-comment>h3 ,.collage-comment>p{
+    text-align: center;
+}
+
+
+.o4{
+    display: flex;
+    justify-content: center;
+}
+
+.genre{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+
+}
+
+
+.haha{
+    width: 80px;
+    height: 40px;
+}
+
+.haha img{
+    width: 20px;
+}
+
+.haha2{
+    font-size: 0.55rem;
+   
+}
+
+.ourstory{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.ourstory a{
+    font-size: 15px;
+}
+
+
+.iconbutton{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.footanchor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footanchor a{
+    font-size: 15px;
+}
 
 
 }

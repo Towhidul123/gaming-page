@@ -243,7 +243,89 @@ nav {
     display: flex;
     gap: 24px;
 
+    position: relative;
+
 }
+
+.fourimage h4 {
+
+    color: #534C64;
+    font-size: 20px;  
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+.img1, .img2, .img3, .img4{
+    position: relative;
+}
+
+.img1:hover .overlay {
+    opacity: 1;
+}
+.img2:hover .overlay {
+    opacity: 1;
+}
+.img3:hover .overlay {
+    opacity: 1;
+}
+.img4:hover .overlay {
+    opacity: 1;
+}
+
+.img1:hover {
+    opacity: 0.5;
+}
+.img2:hover {
+    opacity: 0.5;
+}
+.img3:hover {
+    opacity: 0.5;
+}
+.img4:hover {
+    opacity: 0.5;
+}
+
+.overlay i {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.overlay h5 {
+    color: #FF42A5;
+
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 600;
+
+
+
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 100%;
+}
+
+
+
+
 
 
 
@@ -275,6 +357,10 @@ nav {
     text-align: right;
 }
 
+.collage-comment {
+    padding-bottom: 360px;
+}
+
 
 
 
@@ -288,14 +374,16 @@ nav {
 
 .cowboy>img {
 
-    margin-left: 150px;
-    /* width: 100%; */
+    /* margin-left: 150px; */
+
+    width: 100%;
 }
 
 .cowboy2 img {
 
     position: relative;
     bottom: 300px;
+    right: 150px;
 
 }
 
@@ -303,7 +391,7 @@ nav {
 /* section 4 */
 
 .o4 {
-    margin-top: 0;
+    margin-top: -150px;
     margin-bottom: 120px;
 }
 
@@ -350,6 +438,8 @@ nav {
     font-size: 20px;
     font-weight: 600;
 
+
+
 }
 
 
@@ -392,6 +482,7 @@ nav {
 .iconbutton {
     display: flex;
     gap: 40px;
+
 }
 
 
@@ -401,6 +492,7 @@ nav {
 
     background-color: #0B0223;
     border: 0;
+    cursor: pointer;
 }
 
 .footanchor {
@@ -424,10 +516,10 @@ nav {
     text-align: center;
     padding-top: 18px;
 
-    color: rgba(255, 255, 255, 0.60); 
-    font-size: 16px;  
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
     font-weight: 500;
-   
+
 }
 
 

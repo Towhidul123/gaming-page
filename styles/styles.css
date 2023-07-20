@@ -39,7 +39,7 @@ body {
 header {
     
     width: auto;
-    /* height: 130px; */
+    padding-bottom: 39px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
@@ -193,7 +193,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     border: none;
-
+    cursor: pointer;
 }
 
 .btn2 {
@@ -209,6 +209,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     border: none;
+    cursor: pointer;
 }
 
 .banner-content-picture img {
@@ -259,16 +260,17 @@ nav {
 
 .overlay {
     position: absolute;
-    top: 0px;
+    top: 150px;
     bottom: 0;
     left: 0px;
     right: 0;
-    height: 100%;
+    height: 50%;
     width: 100%;
     opacity: 0;
     transition: .3s ease;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 0px;
+    
 
 }
 
@@ -332,6 +334,9 @@ nav {
 
 
 /* Section 3 */
+.o3{
+    
+}
 
 
 .collage {
@@ -341,7 +346,7 @@ nav {
 
    
 
-    /* height: 726px;     */
+    height: 726px;    
 }
 
 .collage-comment>h3 {
@@ -413,6 +418,14 @@ nav {
 
     cursor: pointer;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+
 
 }
 
@@ -423,25 +436,11 @@ nav {
 }
 
 .haha>img {
-    padding-top: 10px;
-    padding-left: 10px;
+    /* padding-top: 10px;
+    padding-left: 10px; */
 }
 
 
-.haha2:hover {
-    color: #F948B2;
-}
-
-.haha2 {
-    padding-top: 29px;
-
-    color: #0B0223;
-    font-size: 20px;
-    font-weight: 600;
-
-
-
-}
 
 
 
@@ -532,6 +531,63 @@ nav {
 @media screen and (max-width:576px) {
 
 
+    .o1 {
+        background-image: none;
+       
+    
+    }
+
+    .bannerbackground{
+        height: 400px;  
+        background-image: url(../images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+
+    .banner-content{
+         
+        width: 400px;
+        text-align: center;
+    }
+   
+    .banner-content h2 { 
+        padding-top: 80px;
+        font-size: 28px;
+    }
+
+ .banner-content h1{
+     font-size: 58px;
+ }
+
+ .banner-content h6 {
+
+    font-size: 14px;
+    
+}
+
+.btn1 {
+    border-radius: 48px; 
+    padding: 15px 20px; 
+    font-size: 15px;
+    
+}
+
+.btn2 {
+    border-radius: 48px;
+    padding: 15px 20px;
+    font-size: 15px;  
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -553,6 +609,9 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.o3{
+    margin-top: 50px;
 }
 
 .img1,.img2,.img3,.img4{
@@ -584,15 +643,16 @@ header{
 }
 
 .cowboy img{
-    width: 80%;
+    width: 60%;
   
 
 }
 
 .cowboy2 img{
     width: 30%;
-    left: 1px;
-   top: 0.5px;
+    left: 25px;
+    top:1px;
+    padding-top: 150px;
     
 
 }
@@ -601,33 +661,40 @@ header{
     text-align: center;
 }
 
+.collage-comment p {
+    padding: 20px 0px;
+}
 
 .o4{
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .genre{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 40px;
-
+    
 }
 
 
 .haha{
     width: 80px;
     height: 40px;
+    font-size: 10px;
+    font-weight: 600;
+
 }
 
 .haha img{
-    width: 20px;
+    width: 25px;
+    
 }
 
-.haha2{
-    font-size: 0.55rem;
-   
-}
+
+
+
 
 .ourstory{
     display: grid;
@@ -658,8 +725,65 @@ header{
 }
 
 
+/*  */
+/*  */
+/*  */
+
+
+
 @media screen and (min-width:576px) and (max-width:960px) {
     
+    .o1 {
+        background-image: none;
+    }
+
+    .bannerbackground{
+        height: 500px;  
+        background-image: url(../images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .banner-content{
+        
+     
+        width: 600px;
+        text-align: center;
+    }
+   
+    .banner-content h2 { 
+        font-size: 38px;
+        padding-top: 100px;
+    }
+
+ .banner-content h1{
+     font-size: 68px;
+ }
+
+ .banner-content h6 {
+
+    font-size: 24px;
+    
+}
+
+.btn1 {
+    border-radius: 58px; 
+    padding: 25px 30px; 
+    font-size: 15px;
+    
+}
+
+.btn2 {
+    border-radius: 58px;
+    padding: 25px 30px;
+    font-size: 15px;  
+    
+}
+
+
+
 
     
 header{
@@ -711,21 +835,28 @@ header{
 }
 
 .cowboy img{
-    width: 80%;
+    width: 60%;
   
 
 }
 
 .cowboy2 img{
     width: 30%;
-    left: 1px;
-   top: 0.5px;
+    left: 25px;
+    top:1px;
+    padding-top: 250px;
     
 
 }
 
 .collage-comment>h3 ,.collage-comment>p{
     text-align: center;
+}
+
+.collage-comment p {
+    padding: 20px 0px;
+}.collage-comment p {
+    padding: 20px 0px;
 }
 
 
@@ -738,23 +869,25 @@ header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 40px;
-
+    
 }
 
 
 .haha{
-    width: 80px;
+    width: 150px;
     height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+
 }
 
 .haha img{
-    width: 20px;
+    width: 30px;
+    
 }
 
-.haha2{
-    font-size: 0.55rem;
-   
-}
+
+
 
 .ourstory{
     display: grid;
